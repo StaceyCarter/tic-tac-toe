@@ -18,12 +18,20 @@ class Move():
 class Board():
     moves = []
 
-    def display():
+    def display(self):
         """
         Displays a current version of the board.
 
         """
-    def add_move(move):
+        board = [["_", "_", "_"],
+                 ["_", "_", "_"],
+                 ["_", "_", "_"]]
+
+        display = "\n".join([" ".join(line) for line in board])
+
+        print(display)
+
+    def add_move(self, move):
         """ Adds the new move to the board and re-renders the display.
 
         """
